@@ -13,14 +13,14 @@ declare(strict_types=1);
 
 namespace Sylius\Bundle\OrderBundle\Command;
 
-use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
+use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
  * @final
  */
-class RemoveExpiredCartsCommand extends ContainerAwareCommand
+class RemoveExpiredCartsCommand extends Command
 {
     /**
      * {@inheritdoc}

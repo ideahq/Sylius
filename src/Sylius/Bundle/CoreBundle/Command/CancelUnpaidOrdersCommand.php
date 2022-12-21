@@ -13,14 +13,15 @@ declare(strict_types=1);
 
 namespace Sylius\Bundle\CoreBundle\Command;
 
-use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
+use Symfony\Component\Console\Command\Command;
+use Symfony\Bundle\FrameworkBundle\Command\;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
  * @final
  */
-class CancelUnpaidOrdersCommand extends ContainerAwareCommand
+class CancelUnpaidOrdersCommand extends Command
 {
     /**
      * {@inheritdoc}

@@ -15,14 +15,15 @@ namespace Sylius\Bundle\CoreBundle\Command;
 
 use Doctrine\ORM\EntityManagerInterface;
 use Sylius\Bundle\CoreBundle\Installer\Executor\CommandExecutor;
-use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\NullOutput;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Command\Command;
 
-abstract class AbstractInstallCommand extends ContainerAwareCommand
+
+abstract class AbstractInstallCommand extends Command
 {
     /** @deprecated */
     public const WEB_ASSETS_DIRECTORY = 'web/assets/';

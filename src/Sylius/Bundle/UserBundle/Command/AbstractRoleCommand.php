@@ -16,13 +16,13 @@ namespace Sylius\Bundle\UserBundle\Command;
 use Doctrine\Common\Persistence\ObjectManager;
 use Sylius\Component\User\Model\UserInterface;
 use Sylius\Component\User\Repository\UserRepositoryInterface;
-use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
+use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\ChoiceQuestion;
 use Symfony\Component\Console\Question\Question;
 
-abstract class AbstractRoleCommand extends ContainerAwareCommand
+abstract class AbstractRoleCommand extends Command
 {
     /**
      * {@inheritdoc}

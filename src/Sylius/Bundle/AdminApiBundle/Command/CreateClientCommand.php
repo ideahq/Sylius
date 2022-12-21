@@ -19,11 +19,13 @@ use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Command\Command;
+
 
 /**
  * @deprecated Fetching dependencies directly from container is not recommended from Symfony 3.4. Extending `ContainerAwareCommand` will be removed in 2.0
  */
-final class CreateClientCommand extends ContainerAwareCommand
+final class CreateClientCommand extends Command
 {
     /** @var ClientManagerInterface|null */
     private $clientManager;
