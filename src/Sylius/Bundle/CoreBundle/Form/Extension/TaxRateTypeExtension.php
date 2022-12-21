@@ -32,8 +32,8 @@ final class TaxRateTypeExtension extends AbstractTypeExtension
     /**
      * {@inheritdoc}
      */
-    public function getExtendedType(): string
+    public static function getExtendedTypes(): iterable
     {
-        return TaxRateType::class;
+        return [TaxRateType::class];
     }
 }

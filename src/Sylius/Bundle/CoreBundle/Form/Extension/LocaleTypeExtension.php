@@ -60,9 +60,9 @@ final class LocaleTypeExtension extends AbstractTypeExtension
     /**
      * {@inheritdoc}
      */
-    public function getExtendedType(): string
+    public static function getExtendedTypes(): iterable
     {
-        return LocaleType::class;
+        return [LocaleType::class];
     }
 
     private function getLocaleName(string $code): ?string

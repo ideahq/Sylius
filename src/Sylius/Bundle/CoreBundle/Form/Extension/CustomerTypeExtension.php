@@ -32,8 +32,8 @@ final class CustomerTypeExtension extends AbstractTypeExtension
     /**
      * {@inheritdoc}
      */
-    public function getExtendedType(): string
+    public static function getExtendedTypes(): iterable
     {
-        return CustomerType::class;
+        return [CustomerType::class];
     }
 }

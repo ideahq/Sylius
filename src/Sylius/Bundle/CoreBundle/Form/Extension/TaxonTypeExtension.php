@@ -40,8 +40,8 @@ final class TaxonTypeExtension extends AbstractTypeExtension
     /**
      * {@inheritdoc}
      */
-    public function getExtendedType(): string
+    public static function getExtendedTypes(): iterable
     {
-        return TaxonType::class;
+        return [TaxonType::class];
     }
 }

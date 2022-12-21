@@ -37,8 +37,8 @@ final class PromotionTypeExtension extends AbstractTypeExtension
     /**
      * {@inheritdoc}
      */
-    public function getExtendedType(): string
+    public function getExtendedTypes(): iterable
     {
-        return PromotionType::class;
+        return [PromotionType::class];
     }
 }

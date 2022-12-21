@@ -78,9 +78,9 @@ final class CountryTypeExtension extends AbstractTypeExtension
     /**
      * {@inheritdoc}
      */
-    public function getExtendedType(): string
+    public static function getExtendedTypes(): iterable
     {
-        return CountryType::class;
+        return [CountryType::class];
     }
 
     private function getCountryName(string $code): ?string
