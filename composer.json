@@ -97,7 +97,7 @@
         "webmozart/assert": "^1.1",
         "willdurand/hateoas": "^2.12",
         "willdurand/hateoas-bundle": "^1.4",
-        "winzou/state-machine-bundle": "^0.3",
+        "winzou/state-machine-bundle": "^0.4",
         "zendframework/zend-hydrator": "^2.2",
         "zendframework/zend-stdlib": "^3.1"
     },
