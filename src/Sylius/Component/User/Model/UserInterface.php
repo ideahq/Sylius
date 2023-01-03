@@ -18,7 +18,7 @@ use Sylius\Component\Resource\Model\ResourceInterface;
 use Sylius\Component\Resource\Model\TimestampableInterface;
 use Sylius\Component\Resource\Model\ToggleableInterface;
 use Symfony\Component\Security\Core\Encoder\EncoderAwareInterface;
-use Symfony\Component\Security\Core\User\AdvancedUserInterface;
+use SyliusLabs\Polyfill\Symfony\Security\Core\User\AdvancedUserInterface;
 
 interface UserInterface extends
     AdvancedUserInterface,
