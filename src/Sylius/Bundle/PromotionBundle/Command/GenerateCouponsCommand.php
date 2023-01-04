@@ -18,13 +18,13 @@ use Sylius\Component\Promotion\Generator\PromotionCouponGeneratorInstructionInte
 use Sylius\Component\Promotion\Generator\PromotionCouponGeneratorInterface;
 use Sylius\Component\Promotion\Model\PromotionInterface;
 use Sylius\Component\Promotion\Repository\PromotionRepositoryInterface;
-use Symfony\Component\Console\Command\Command;
+use SyliusLabs\Polyfill\Symfony\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
-final class GenerateCouponsCommand extends Command
+final class GenerateCouponsCommand extends ContainerAwareCommand
 {
     /** @var PromotionRepositoryInterface */
     private $promotionRepository;

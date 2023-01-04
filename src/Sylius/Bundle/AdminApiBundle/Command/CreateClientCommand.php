@@ -15,17 +15,16 @@ namespace Sylius\Bundle\AdminApiBundle\Command;
 
 use FOS\OAuthServerBundle\Model\ClientManagerInterface;
 use Sylius\Bundle\AdminApiBundle\Model\Client;
-use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\Command\Command;
+use SyliusLabs\Polyfill\Symfony\FrameworkBundle\Command\ContainerAwareCommand;
 
 
 /**
  * @deprecated Fetching dependencies directly from container is not recommended from Symfony 3.4. Extending `ContainerAwareCommand` will be removed in 2.0
  */
-final class CreateClientCommand extends Command
+final class CreateClientCommand extends ContainerAwareCommand
 {
     /** @var ClientManagerInterface|null */
     private $clientManager;

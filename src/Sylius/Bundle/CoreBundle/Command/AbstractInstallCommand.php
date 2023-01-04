@@ -20,10 +20,10 @@ use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\NullOutput;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\Command\Command;
+use SyliusLabs\Polyfill\Symfony\FrameworkBundle\Command\ContainerAwareCommand;
 
 
-abstract class AbstractInstallCommand extends Command
+abstract class AbstractInstallCommand extends ContainerAwareCommand
 {
     /** @deprecated */
     public const WEB_ASSETS_DIRECTORY = 'web/assets/';

@@ -15,7 +15,7 @@ namespace Sylius\Bundle\UiBundle\Command;
 
 use Sylius\Bundle\UiBundle\Registry\TemplateBlock;
 use Sylius\Bundle\UiBundle\Registry\TemplateBlockRegistryInterface;
-use Symfony\Component\Console\Command\Command;
+use SyliusLabs\Polyfill\Symfony\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -24,7 +24,7 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 /**
  * @experimental
  */
-final class DebugTemplateEventCommand extends Command
+final class DebugTemplateEventCommand extends ContainerAwareCommand
 {
     protected static $defaultName = 'sylius:debug:template-event';
 

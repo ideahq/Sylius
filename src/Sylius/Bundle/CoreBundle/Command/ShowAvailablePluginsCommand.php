@@ -16,11 +16,11 @@ namespace Sylius\Bundle\CoreBundle\Command;
 use Doctrine\Common\Collections\ArrayCollection;
 use Sylius\Bundle\CoreBundle\Command\Model\PluginInfo;
 use Sylius\Bundle\CoreBundle\Installer\Renderer\TableRenderer;
-use Symfony\Component\Console\Command\Command;
+use SyliusLabs\Polyfill\Symfony\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-final class ShowAvailablePluginsCommand extends Command
+final class ShowAvailablePluginsCommand extends ContainerAwareCommand
 {
     /**
      * @var iterable<PluginInfo>
