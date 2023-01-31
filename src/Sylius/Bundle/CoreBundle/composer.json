@@ -52,8 +52,8 @@
         "sylius/ui-bundle": "^1.6",
         "sylius/user-bundle": "^1.6",
         "sylius-labs/association-hydrator": "^1.1",
-        "symfony/framework-bundle": "^4.4",
-        "symfony/intl": "^4.4",
+        "symfony/framework-bundle": "^5.4",
+        "symfony/intl": "^5.4",
         "winzou/state-machine-bundle": "^0.5",
         "liip/imagine-bundle": "^2.3"
     },
