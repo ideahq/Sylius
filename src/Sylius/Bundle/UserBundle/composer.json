@@ -39,7 +39,7 @@
         "sylius/mailer-bundle": "^1.4",
         "sylius/resource-bundle": "^1.6",
         "sylius/user": "^1.6",
-        "symfony/framework-bundle": "^4.4",
+        "symfony/framework-bundle": "^5.4",
         "webmozart/assert": "^1.0"
     },
     "require-dev": {

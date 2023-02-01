@@ -39,7 +39,7 @@
         "sylius/resource-bundle": "^1.6",
         "sylius/review": "^1.6",
         "sylius/user-bundle": "^1.6",
-        "symfony/framework-bundle": "^4.4"
+        "symfony/framework-bundle": "^5.4"
     },
     "require-dev": {
         "phpspec/phpspec": "^5.0",

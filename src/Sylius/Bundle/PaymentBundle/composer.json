@@ -24,7 +24,7 @@
 
         "sylius/payment": "^1.6",
         "sylius/resource-bundle": "^1.6",
-        "symfony/framework-bundle": "^4.4"
+        "symfony/framework-bundle": "^5.4"
     },
     "require-dev": {
         "doctrine/orm": "^2.5",
