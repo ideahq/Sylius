@@ -29,7 +29,7 @@
         "sylius/grid-bundle": "^1.6",
         "symfony/framework-bundle": "^5.4",
         "symfony/security": "^4.4",
-        "symfony/security-bundle": "^4.4",
+        "symfony/security-bundle": "^5.4"
         "symfony/templating": "^4.4",
         "zendframework/zend-stdlib": "^3.1"
     },
@@ -38,7 +38,7 @@
         "matthiasnoback/symfony-dependency-injection-test": "^3.0",
         "phpspec/phpspec": "^5.0",
         "phpunit/phpunit": "^7.0",
-        "symfony/dependency-injection": "^4.4",
+        "symfony/dependency-injection": "^5.4",
         "symfony/form": "^4.4",
         "twig/twig": "^2.0"
     },
