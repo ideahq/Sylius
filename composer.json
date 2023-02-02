@@ -31,7 +31,7 @@
         "doctrine/orm": "^2.5",
         "egulias/email-validator": "~2.0",
         "friendsofsymfony/oauth-server-bundle": "^1.6",
-        "friendsofsymfony/rest-bundle": "^2.1",
+        "friendsofsymfony/rest-bundle": "^3.0",
         "fzaninotto/faker": "^1.6",
         "gedmo/doctrine-extensions": "^2.4.12",
         "jms/serializer-bundle": "^3.5",
