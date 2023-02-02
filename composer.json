@@ -60,7 +60,7 @@
         "sylius/mailer-bundle": "^1.4.4",
         "sylius/registry": "^1.4.1",
         "sylius/resource": "^1.4.4",
-        "sylius/resource-bundle": "^1.4.4",
+        "sylius/resource-bundle": "^1.7",
         "sylius/theme-bundle": "^2.1",
         "symfony/asset": "^5.4",
         "symfony/config": "^5.4",
