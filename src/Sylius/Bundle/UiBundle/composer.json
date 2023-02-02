@@ -28,7 +28,6 @@
         "sonata-project/block-bundle": "^4.2",
         "sylius/grid-bundle": "^1.8",
         "symfony/framework-bundle": "^5.4",
-        "symfony/security": "^4.4",
         "symfony/security-bundle": "^5.4",
         "symfony/templating": "^5.4",
         "zendframework/zend-stdlib": "^3.1"

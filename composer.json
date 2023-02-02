@@ -86,7 +86,6 @@
         "symfony/property-access": "^5.4",
         "symfony/proxy-manager-bridge": "^5.4",
         "symfony/routing": "^5.4",
-        "symfony/security": "^4.4",
         "symfony/security-bundle": "^5.4",
         "symfony/swiftmailer-bundle": "^3.0",
         "symfony/templating": "^5.4",
