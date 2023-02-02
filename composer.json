@@ -115,7 +115,7 @@
         "friends-of-behat/symfony-extension": "^2.0",
         "friends-of-behat/variadic-extension": "^1.1",
         "hwi/oauth-bundle": "^1.0",
-        "lchrusciel/api-test-case": "^5.0",
+        "lchrusciel/api-test-case": "^5.1",
         "matthiasnoback/symfony-config-test": "^4.0",
         "matthiasnoback/symfony-dependency-injection-test": "^3.0",
         "mikey179/vfsstream": "^1.6",
