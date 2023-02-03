@@ -50,7 +50,7 @@ final class ResourceDeleteSubscriber implements EventSubscriberInterface
 
     public function onResourceDelete(ExceptionEvent $event): void
     {
-        $exception = $event->getException();
+        $exception = $event->getThrowable();
         if (!$exception instanceof ForeignKeyConstraintViolationException) {
             return;
         }
