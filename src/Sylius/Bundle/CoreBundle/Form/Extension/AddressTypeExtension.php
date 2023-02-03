@@ -49,7 +49,7 @@ final class AddressTypeExtension extends AbstractTypeExtension
         $builder->add($countryCodeField);
     }
 
-    public static function getExtendedTypes(): array
+    public static function getExtendedTypes(): iterable
     {
         return [AddressType::class];
     }
