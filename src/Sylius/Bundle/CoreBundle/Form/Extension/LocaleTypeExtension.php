@@ -21,6 +21,7 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\FormEvent;
 use Symfony\Component\Form\FormEvents;
 use Symfony\Component\Intl\Intl;
+use Symfony\Component\Intl\Locales;
 
 final class LocaleTypeExtension extends AbstractTypeExtension
 {
@@ -57,9 +58,11 @@ final class LocaleTypeExtension extends AbstractTypeExtension
         });
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    public function getExtendedType(): string
+    {
+        return LocaleType::class;
+    }
+
     public static function getExtendedTypes(): iterable
     {
         return [LocaleType::class];
@@ -67,7 +70,7 @@ final class LocaleTypeExtension extends AbstractTypeExtension
 
     private function getLocaleName(string $code): ?string
     {
-        return Intl::getLocaleBundle()->getLocaleName($code);
+        return Locales::getName($code);
     }
 
     /**
@@ -75,7 +78,7 @@ final class LocaleTypeExtension extends AbstractTypeExtension
      */
     private function getAvailableLocales(): array
     {
-        $availableLocales = Intl::getLocaleBundle()->getLocaleNames();
+        $availableLocales = Locales::getNames();
 
         /** @var LocaleInterface[] $definedLocales */
         $definedLocales = $this->localeRepository->findAll();
