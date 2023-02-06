@@ -49,7 +49,11 @@ class Currency implements CurrencyInterface
      */
     public function getName(): ?string
     {
-        return Intl::getCurrencyBundle()->getCurrencyName($this->getCode());
+        if (null === $code = $this->getCode()) {
+            return null;
+        }
+
+        return Currencies::getName($code);
     }
 
     /**
