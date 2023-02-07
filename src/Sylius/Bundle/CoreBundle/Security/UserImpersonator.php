@@ -51,6 +51,6 @@ final class UserImpersonator implements UserImpersonatorInterface
         $this->session->set($this->sessionTokenParameter, serialize($token));
         $this->session->save();
 
-        $this->eventDispatcher->dispatch(UserEvents::SECURITY_IMPERSONATE, new UserEvent($user));
+        $this->eventDispatcher->dispatch(new UserEvent($user), UserEvents::SECURITY_IMPERSONATE);
     }
 }
