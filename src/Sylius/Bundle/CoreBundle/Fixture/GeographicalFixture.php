@@ -21,6 +21,7 @@ use Sylius\Component\Addressing\Model\ProvinceInterface;
 use Sylius\Component\Addressing\Model\ZoneInterface;
 use Sylius\Component\Resource\Factory\FactoryInterface;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
+use Symfony\Component\Intl\Countries;
 use Symfony\Component\Intl\Intl;
 use Webmozart\Assert\Assert;
 
@@ -91,7 +92,7 @@ class GeographicalFixture extends AbstractFixture
         $optionsNodeBuilder
             ->arrayNode('countries')
                 ->performNoDeepMerging()
-                ->defaultValue(array_keys(Intl::getRegionBundle()->getCountryNames()))
+                ->defaultValue(array_keys(Countries::getNames()))
                 ->scalarPrototype()
         ;
 

@@ -13,6 +13,7 @@ declare(strict_types=1);
 
 namespace Sylius\Component\Addressing\Converter;
 
+use Symfony\Component\Intl\Countries;
 use Symfony\Component\Intl\Intl;
 
 final class CountryNameConverter implements CountryNameConverterInterface
@@ -22,7 +23,7 @@ final class CountryNameConverter implements CountryNameConverterInterface
      */
     public function convertToCode(string $name, string $locale = 'en'): string
     {
-        $names = Intl::getRegionBundle()->getCountryNames($locale);
+        $names = Countries::getNames($locale);
         $countryCode = array_search($name, $names, true);
 
         if (false === $countryCode) {
