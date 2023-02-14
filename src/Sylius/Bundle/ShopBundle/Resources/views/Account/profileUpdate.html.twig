@@ -39,7 +39,9 @@
         {{ sylius_template_event('sylius.shop.account.profile.update.form', {'customer': customer, 'form': form}) }}
 
         <button type="submit" class="ui large primary button" {{ sylius_test_html_attribute('save-changes') }}>{{ 'sylius.ui.save_changes'|trans }}</button>
-        {{ form_row(form._token) }}
+        {% if not form._token.isRendered %}
+            {{ form_row(form._token) }}
+        {% endif %}
         {{ form_end(form, {'render_rest': false}) }}
     </div>
 {% endblock %}

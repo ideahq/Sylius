@@ -22,7 +22,9 @@
 
                 {{ sylius_template_event('sylius.shop.contact.request.form', {'form': form}) }}
 
-                {{ form_row(form._token) }}
+                {% if not form._token.isRendered %}
+                    {{ form_row(form._token) }}
+                {% endif %}
                 <button type="submit" class="ui fluid large primary submit button" {{ sylius_test_html_attribute('send-button') }}>{{ 'sylius.ui.send'|trans }}</button>
                 {{ form_end(form, {'render_rest': false}) }}
             </div>

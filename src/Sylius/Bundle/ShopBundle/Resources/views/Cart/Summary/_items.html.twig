@@ -2,7 +2,9 @@
     {{ form_start(form, {'action': path('sylius_shop_cart_save'), 'attr': {'class': 'ui loadable form', 'novalidate': 'novalidate', 'id': form.vars.id}}) }}
     {{ form_errors(form) }}
     <input type="hidden" name="_method" value="PATCH"/>
-    {{ form_row(form._token) }}
+    {% if not form._token.isRendered %}
+        {{ form_row(form._token) }}
+    {% endif %}
     {{ form_end(form, {'render_rest': false}) }}
 
     {{ sylius_template_event('sylius.shop.cart.summary.items', {'cart': cart, 'form': form}) }}

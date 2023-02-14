@@ -21,7 +21,9 @@
 
                     {% include '@SyliusShop/Checkout/Address/_navigation.html.twig' %}
 
+                {% if not form._token.isRendered %}
                     {{ form_row(form._token) }}
+                {% endif %}
                 {{ form_end(form, {'render_rest': false}) }}
             </div>
         </div>

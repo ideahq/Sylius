@@ -5,6 +5,8 @@
         {{ form_widget(form.tracking, {'attr': {'placeholder': 'sylius.ui.tracking_code'|trans ~ '...'}}) }}
         <button type="submit" class="ui labeled icon teal button"><i class="plane icon"></i> {{ 'sylius.ui.ship'|trans }}</button>
     </div>
-    {{ form_row(form._token) }}
+    {% if not form._token.isRendered %}
+        {{ form_row(form._token) }}
+    {% endif %}
     {{ form_end(form, {'render_rest': false}) }}
 </div>

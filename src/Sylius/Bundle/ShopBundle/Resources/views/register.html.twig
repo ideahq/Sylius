@@ -18,7 +18,9 @@
             <button type="submit" class="ui large primary button" {{ sylius_test_html_attribute('register-button') }}>
                 {{ 'sylius.ui.create_an_account'|trans }}
             </button>
-        {{ form_row(form._token) }}
+        {% if not form._token.isRendered %}
+            {{ form_row(form._token) }}
+        {% endif %}
         {{ form_end(form, {'render_rest': false}) }}
     </div>
 {% endblock %}
