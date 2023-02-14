@@ -18,6 +18,8 @@
 
     {% include '@SyliusUi/Form/Buttons/_update.html.twig' with {'paths': {'cancel': index_url}} %}
 
-    {{ form_row(form._token) }}
+    {% if not form._token.isRendered %}
+        {{ form_row(form._token) }}
+    {% endif %}
     {{ form_end(form, {'render_rest': false}) }}
 </div>
