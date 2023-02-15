@@ -97,6 +97,7 @@ $.fn.extend({
       updateNotification();
     });
 
+    return;
     updateNotification();
   },
 });
