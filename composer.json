@@ -19,7 +19,7 @@
         }
     ],
     "require": {
-        "php": "^7.3",
+        "php": "^7.3 || ^8.0",
         "ext-exif": "*",
         "ext-fileinfo": "*",
         "ext-gd": "*",
@@ -31,7 +31,7 @@
         "egulias/email-validator": "~2.0",
         "friendsofsymfony/oauth-server-bundle": "^1.6",
         "friendsofsymfony/rest-bundle": "^3.0",
-        "fzaninotto/faker": "^1.6",
+        "fakerphp/faker": "^1.10",
         "gedmo/doctrine-extensions": "^2.4.12 || ^3.0",
         "jms/serializer-bundle": "^3.5",
         "knplabs/gaufrette": "^0.8",
@@ -99,8 +99,9 @@
         "willdurand/hateoas": "^3.0",
         "willdurand/hateoas-bundle": "^2.0",
         "winzou/state-machine-bundle": "^0.5",
-        "zendframework/zend-hydrator": "^2.2",
-        "zendframework/zend-stdlib": "^3.1"
+        "laminas/laminas-hydrator": "^4.2",
+        "laminas/laminas-stdlib": "^3.3",
+        "laminas/laminas-zendframework-bridge": "^1.4"
     },
     "require-dev": {
         "behat/behat": "^3.6.1",
